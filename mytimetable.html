@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="mytimetable.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY TIME TABLE </title>
+
+    <ul id="navbar">
+        <li><a href="./index.html"> Index </a></li>
+        <li><a class="active" href="./mytimetable.html"> Time Table </a></li>
+        <li><a href="./coursevideos.html"> Course Videos </a></li>
+    </ul>
+
+
+</head>
+
+<body>
+
+    <input id="val" type="text" placeholder="Search.." onkeyup="Search()">
+
+    <table id="TimeTable">
+
+        <tr>
+            <th colspan="15">TIME TABLE</th>
+        </tr>
+
+        <tr>
+            <td rowspan="1" colspan="2"> TIMINGS </td>
+            <td rowspan="1" colspan="2"> 08:30 - 09:50 </td>
+            <td rowspan="1" colspan="2"> 10:00 - 11:20</td>
+            <td rowspan="1" colspan="2"> 11:30 - 12:50</td>
+            <td rowspan="1" colspan="2"> 01:00 - 02:20</td>
+            <td rowspan="1" colspan="2"> 02:30 - 03:50</td>
+            <td rowspan="1" colspan="2"> 04:00 - 05:20 </td>
+            <td>Edit</td>
+        </tr>
+
+        <tr id="r1">
+            <td rowspan="1" colspan="2"> MONDAY </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> SPM(B) <br /> B - 229 </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> DBA (A) <br /> Marghalla - 1 </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td>
+                <input type="button" value="Edit" id="editButton" onclick='Edit("1")'>
+                <input type="button" value="Delete " id="deleteButton" onclick='Delete("1")'>
+            </td>
+        </tr>
+
+        <tr id="r2">
+            <td rowspan="1" colspan="2"> TUESDAY </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> WEB(B) <br /> C - 305 </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td rowspan="1" colspan="2"> </td>
+            <td>
+                <input type="button" value="Edit" id="editButton" onclick='Edit("2")'>
+                <input type="button" value="Delete " id="deleteButton" onclick='Delete("2")'>
+            </td>
+
+
+            <tr id="r3">
+                <td rowspan="1" colspan="2"> WEDNESDAY </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> SPM(B) <br /> B - 229 </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> DBA (A) <br /> C - 404 </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td>
+                    <input type="button" value="Edit" id="editButton" onclick='Edit("3")'>
+                    <input type="button" value="Delete " id="deleteButton" onclick='Delete("3")'>
+                </td>
+
+            </tr>
+
+            <tr id="r4">
+                <td rowspan="1" colspan="2"> THURSDAY </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> WEB(B) <br /> C - 307 </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td>
+                    <input type="button" value="Edit" id="editButton" onclick='Edit("4")'>
+                    <input type="button" value="Delete " id="deleteButton" onclick='Delete("4")'>
+                </td>
+
+            </tr>
+
+            <tr id="r5">
+                <td rowspan="1" colspan="2"> FRIDAY </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> </td>
+                <td rowspan="1" colspan="2"> JUMMAH <br /> BREAK </td>
+                <td rowspan="1" colspan="4"> TM(B) <br /> C - 307 </td>
+                <td>
+                    <input type="button" value="Edit" id="editButton" onclick='Edit("5")'>
+                    <input type="button" value="Delete" id="deleteButton" onclick='Delete("5")'>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp0"> </td>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp1"> </td>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp2"> </td>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp3"> </td>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp4"> </td>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp5"> </td>
+                <td rowspan="1" colspan="2"> <input type="text" value="" id="inp6"> </td>
+
+                <td>
+                    <input type="button" value="Add Row" id="addButton" onclick='Add()'>
+                </td>
+
+            </tr>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p id="copy">Copyright &copy; | All Rights Reserved | Talha Mustafa</p>
+</footer>
+
+</html>

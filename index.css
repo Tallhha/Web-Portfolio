@@ -1,0 +1,264 @@
+body {
+    background-image: linear-gradient(rgb(61, 53, 53), rgb(220, 152, 152));
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* TITLE HEADING */
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+
+/* HEADING*/
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.25);
+    color: rgb(51, 51, 51);
+}
+
+
+/* PROFILE IMAGE */
+
+#dp {
+    width: 200px;
+    border-radius: 100%;
+    border: 1px solid white;
+    vertical-align: left;
+    float: none;
+    transition: .2s;
+    /*
+        margin: 20px 10% 00px 10%;
+        padding: 10px 40px 30px 10px;
+        width: 250px;
+        height: 250px;
+    */
+}
+
+#project_add {
+    float: right;
+}
+
+#cs {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+
+/* LINKS LOGOS */
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: .2s;
+}
+
+#logo:hover {
+    transform: scale(1.5);
+}
+
+
+/* PARAGRAPHS */
+
+p,
+#skillist {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+}
+
+
+/* LINKS */
+
+.links a {
+    text-decoration: none;
+    color: #42b4d6;
+    font-weight: normal;
+    padding: 15px;
+}
+
+#uni {
+    text-decoration: none;
+    color: #42b4d6;
+    font-weight: normal;
+}
+
+#uni:hover,
+.links a:hover:focus {
+    text-decoration: underline;
+}
+
+
+/* NAVBAR START 
+
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 33, 33);
+}
+*/
+
+#navbar li {
+    float: left;
+}
+
+#navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(36, 33, 33);
+    position: relative;
+    width: 98%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+
+#navbar a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.active {
+    background-color: #550909;
+}
+
+
+/* ^NAVBAR END^ */
+
+
+/* BORDERS AROUND EVERY BLOCK */
+
+.profile,
+.border {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+/* FOR ALIGNING PROJECTS */
+
+.projects {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.projects div {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 1%;
+    padding: 0px 20px 50px 10px;
+    width: 20%;
+    text-align: left;
+    background-color: rgb(208, 210, 216);
+    justify-content: space-evenly;
+}
+
+.projectpics {
+    width: 90px;
+    height: 70px;
+    text-align: left;
+}
+
+
+/* FOR SKILLS AND EDUCATION */
+
+.multiple,
+.courses {
+    display: flex;
+}
+
+.multiple div,
+.courses div {
+    width: 50%;
+    float: left;
+    /*border: 2px solid black;*/
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+
+/* FOOTER */
+
+footer,
+#copy {
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Courier New', Courier;
+    font-size: 17px;
+    color: black;
+}
+
+
+/* MOBILE */
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
+    .projects div {
+        width: 90%;
+    }
+    .multiple,
+    .courses {
+        display: inline-block;
+    }
+    .multiple div,
+    .courses div {
+        width: 100%;
+    }
+}
+
+
+/* TABLET */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .projects div {
+        width: 43%;
+    }
+    .courses div {
+        width: 50%;
+    }
+}
+
+
+/* DESKTOP */
+
+@media only screen and (min-device-width: 992px) {
+    .projects div {
+        width: 19%;
+    }
+    .courses div {
+        width: 50%;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Project Form</title>
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="input.css">
+    <h1> ADD PROJECT </h1>
+    <form id="ProjectsForm" name="ProjectsForm">
+
+        <label>Project Title: </label>
+        <input type="text" value="" id="project_title" required>
+
+        <br />
+        <br />
+
+        <label>Project Year:</label>
+
+        <input type="number" min="1980" max="2050" step="1" value="" id="project_year" required/>
+
+        <br />
+        <br />
+
+        <label>Project Technoligies:</label>
+        <br />
+
+        <select name="tech" id="tech" multiple>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Objective-C">Objective-C</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Perl">Perl</option>
+            <option value="PHP">PHP</option>
+            <option value="Ruby on Rails">Ruby on Rails</option>
+            <option value="Android">Android</option>
+            <option value="iOS">iOS</option>
+            <option value="HTML">HTML</option>
+            <option value="XML">XML</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label>Description:</label>
+        <br />
+        <textarea id="desc" rows=7 cols=55 placeholder="Tell more about your Project..."></textarea>
+        <br />
+        <br />
+
+        <input type="button" value="Add Project" id="projectButton" onclick='AddProject()'>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
